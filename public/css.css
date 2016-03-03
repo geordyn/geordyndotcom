@@ -103,14 +103,16 @@ h4 {
 }
 
 .textContainer {
+  margin: auto;
   position: relative;
-  text-align: left;
+  text-align: center;
   font-size: 8vw;
   font-family: 'circularbold', sans-serif;
   color: #f4f5f4;
   letter-spacing: -0.38vw;
   line-height: 0.98;
-  min-height: 88vh;
+  min-height: 70vh;
+  max-height: 70vh;
 }
 
 .jstext {
@@ -200,6 +202,9 @@ section h4:after {
   transform: none;
 }
 
+.aboutMe {
+  text-align: left;
+}
 #about .info p {
   -webkit-transform: translateY(20px);
   -moz-transform: translateY(20px);
@@ -210,11 +215,13 @@ section h4:after {
   -ms-transition: -ms-transform 1s;
   -o-transition: -o-transform 1s;
   transition: transform 1s;
+  margin: auto;
+  text-align: center;
 }
 
-.shortColumn {
+/*.shortColumn {
   width: 45%;
-}
+}*/
 
 .loopCol {
   border-bottom: 1px solid #f4f5f4;
@@ -311,6 +318,20 @@ section h4:after {
 }
 
 /* Hidden Thing */
+.footer {
+  width: 100%;
+}
+.footerInside {
+  margin: auto;
+}
+.mobile {
+  display: none;
+  text-align: center;
+  margin: auto;
+}
+.mobile a {
+  cursor: pointer;
+}
 .hidden {
   position: relative;
   display: inline-block;
@@ -587,6 +608,54 @@ section h4:after {
   }
 }
 
+
+/* Block Quote */
+.quoteContainer {
+  width: 100%;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+blockquote {
+margin:  0 auto;
+font-family: Georgia, serif;
+font-size: 18px;
+font-style: italic;
+width: 50%;
+padding: 0.35em 40px;
+line-height: 1.45;
+position: relative;
+color: #f4f5f4;
+text-align: center;
+}
+
+blockquote:before {
+display: block;
+padding-left: 10px;
+content: "\201C";
+font-size: 3em;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #dce2dc;
+}
+
+blockquote cite {
+color: #292727;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
+
+
+
+
 /* Media Queries */
 @media all and (max-width: 1024px) {
   .worksList li {
@@ -596,13 +665,22 @@ section h4:after {
   .info {
     font-size: 2vw;
   }
-
+  blockquote {
+    width: 100%;
+  }
+  .mobile {
+    display: block;
+  }
+  .footerInside {
+    display: none;
+  }
   .shortColumn {
-    width: 50%;
+    width: 70%;
   }
 
   .textContainer {
-    min-height: 75vh;
+    min-height: 80vh;
+    max-height: 80vh;
   }
 
   h3 {
@@ -615,12 +693,13 @@ section h4:after {
     display: block;
   }
 
-  .shortColumn {
+  /*.shortColumn {
     width: 75%;
-  }
+  }*/
 
   .textContainer {
-    min-height: 80vh;
+    min-height: 60vh;
+    max-height: 60vh;
     font-size: 11.2vw;
     letter-spacing: -.45vw;
   }
@@ -652,14 +731,18 @@ section h4:after {
 
 @media all and (max-width: 468px) {
   .textContainer {
-    min-height: 80vh;
+    min-height: 60vh;
+    max-height: 60vh;
     font-size: 11.4vw;
     letter-spacing: -.45vw;
   }
 
-  .worksList li, .shortColumn {
+  .worksList li,
+   /*.shortColumn*/
+    {
     width: 100%;
   }
+
 
   section h4:after {
     width: 140px;
