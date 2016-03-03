@@ -4,15 +4,15 @@
 
 @font-face {
   font-family: 'circularbold';
-  src: url("/font/circularstd-bold.eot");
-  src: url("/font/circularstd-bold.eot?#iefix") format("embedded-opentype"), url("/font/circularstd-bold.svg#circularbold") format("svg"), url("/font/circularstd-bold.woff") format("woff"), url("/font/circularstd-bold.ttf") format("truetype");
+  src: url("./font/circularstd-bold.eot");
+  src: url("./font/circularstd-bold.eot?#iefix") format("embedded-opentype"), url("./font/circularstd-bold.svg#circularbold") format("svg"), url("./font/circularstd-bold.woff") format("woff"), url("./font/circularstd-bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'circularbook';
-  src: url("/font/circularstd-book.eot");
-  src: url("/font/circularstd-book.eot?#iefix") format("embedded-opentype"), url("/font/circularstd-book.svg#circularbook") format("svg"), url("/font/circularstd-book.woff") format("woff"), url("/font/circularstd-book.ttf") format("truetype");
+  src: url("./font/circularstd-book.eot");
+  src: url("./font/circularstd-book.eot?#iefix") format("embedded-opentype"), url("./font/circularstd-book.svg#circularbook") format("svg"), url("./font/circularstd-book.woff") format("woff"), url("./font/circularstd-book.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
