@@ -1,1 +1,10 @@
-node_modules
+*.7z
+*.bz2
+*.lock
+*.log
+*.pid
+*.swp
+*.tar
+*~
+.DS_Store
+
