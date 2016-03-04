@@ -30,6 +30,9 @@ a {
   text-decoration: none;
   color: #f4f5f4;
 }
+a:hover{
+  cursor: pointer;
+}
 
 h3 {
   font-size: 2.6vw;
@@ -243,6 +246,7 @@ h4.sectionTitle:hover {
   flex: 1;
   text-align: center;
   text-justify: inter-word;
+  flex-wrap: wrap;
 }
 .social {
   padding: 0px;
@@ -520,9 +524,6 @@ opacity: 0.4;
 
 /* Media Queries */
 @media all and (max-width: 1024px) {
-  .worksList li {
-    width: 32%;
-  }
 
   .info {
     font-size: 2vw;
@@ -530,18 +531,14 @@ opacity: 0.4;
   blockquote {
     width: 100%;
   }
-  .mobile {
-    display: block;
-  }
-
-  .shortColumn {
-    width: 70%;
-  }
 
   .social a {
     margin: 0.5em;
   }
-
+  .contactStuff {
+    font-size: 1em;
+    width: 100%;
+  }
   .textContainer {
     min-height: 80vh;
     max-height: 80vh;
@@ -560,9 +557,25 @@ opacity: 0.4;
     display: block;
   }
 
-  /*.shortColumn {
-    width: 75%;
-  }*/
+  #contact {
+    display: block;
+  }
+  blockquote {
+    width: 100%;
+  }
+
+  .social a {
+    margin: 0.5em;
+  }
+  .contactStuff {
+    font-size: 1em;
+    margin: auto;
+    display: block;
+    width: 100%;
+  }
+  .contactCont {
+    display: block;
+  }
 
   .textContainer {
     min-height: 60vh;
@@ -577,18 +590,6 @@ opacity: 0.4;
 
   h3 {
     font-size: 5vw;
-  }
-
-  .email {
-    font-size: 7.5vw;
-  }
-
-  .worksList li {
-    width: 50%;
-  }
-
-  .worksList .clearfix:after {
-    display: none;
   }
 
   .jstext {
@@ -612,6 +613,28 @@ opacity: 0.4;
 
   .floatingNav {
     display: none;
+  }
+  .social {
+    display: inline;
+  }
+  blockquote {
+    width: 100%;
+  }
+
+  .social a {
+    margin: 0.5em;
+  }
+  .contactStuff {
+    font-size: 1em;
+    margin: auto;
+    width: 100%;
+  }
+  .contactCont {
+    display: block;
+    text-align: center;
+  }
+  #contact {
+    display: block;
   }
 
 
