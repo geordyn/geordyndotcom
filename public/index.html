@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Geordyn - Web Developer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="./css.css">
   <link rel="shortcut icon" href="./g1.ico">
@@ -23,7 +24,11 @@
 <body class="noTransition">
   <main>
     <div class="container">
-
+      <div class="floatingNav">
+        <a href="http://github.com/geordyn"><span class="navTxt">github</span></a>
+        <a href="http://facebook.com/geordynX"><span class="navTxt">facebook</span></a>
+        <a href="http://linkedin.com/in/geordyn"><span class="navTxt">linkedin</span></a>
+      </div>
       <div class="textContainer">
         <div class="jstext"></div>
       </div>
@@ -35,8 +40,8 @@
             I promise to never use the cliché phrase, "I make stuff." I'll never leave out a semicolon. My internal links will never open a new window. Most importantly, I've made it my mission to switch all IE users to Google Chrome...one grandma at a time.
             <cite>Geordyn Ader</cite>
           </blockquote></div>
-          <div class="shortColumn info">
-            <h4>about me</h4>
+
+            <h1 class="sectionTitle"><span>about me</span></h1>
             <div class="aboutMe">
 
               I have a love for three things in life: web development, traveling, and writing. I'm origininally from Chicago, but I have lived in San Diego and Phoenix as well. As of now, I live in Provo, Utah. I enjoy coding front to back, using the MEAN Stack. Learning new things is something I enjoy; I am always eager to learn to continue developing my skills. Recently I've been diving into ReactJS. During my coding breaks, I enjoy writing and cross-stitching.
@@ -44,141 +49,92 @@
               <a
                 data-hover="devmtn"
                 href="https://devmounta.in/"
-                class="loopCol"
-                target="_blank">
-                DevMountain
+                class="loopCol">
                 <span class="coloredHover">DevMountain</span>
               </a>,
-
-              <div class="fixedBg noTransition" data-background="devmtn">
-                <div class="container">
-                  <span>a code bootcamp</span>
-                  <br>
-                  <span>empowering the modern developer.</span>
-                </div>
-              </div>
               but I am willing to make myself available for small projects.
 
 
             </div>
-          </div>
+
         </section>
 
         <section id="contact"><br/>
-          <div class="shortColumn info">
-            <h4>contact</h4>
-            <a
-              href="mailto:geordyncader@gmail.com"
-              class="loopCol email"
-              data-hover="email">
-              <h3>geordyn.ader@gmail.com</h3>
-              <!-- <span class="coloredHover">geordyncader@gmail.com</span> -->
-            </a>
 
-            <div>Don't be a stranger! <strong>Call me at (858) 255-1608</strong> or get in touch on:
-              <a
-                href="https://linkedin.com/in/geordyn"
-                target="_blank"
-                class="loopCol"
-                data-hover="linkedin">
-                LinkedIn
-                <span class="coloredHover">LinkedIn</span>
-              </a>,
-              <div class="fixedBg noTransition" data-background="linkedin">
-                <div class="container">
-                  <span>Connect</span>
-                  <br>
-                  <span>with me!</span>
-                </div>
+            <h1 class="sectionTitle"><span>contact</span></h1>
+            <div class="contactStuff">
+                <h4> <i class="fa fa-phone fa-lg"></i> &nbsp; (858) 255-1608</h4>
+
+                <a
+                  href="mailto:geordyncader@gmail.com"
+                  class="email">
+                  <h4><i class="fa fa-envelope fa-lg"></i>&nbsp; geordyn.ader@gmail.com</h4>
+                </a>
               </div>
+            <div class="social">
 
               <a
-                href="https://github.com/geordyn"
-                target="_blank"
-                class="loopCol"
-                data-hover="github">
-                GitHub
-                <span class="coloredHover">GitHub</span>
-              </a>,
-              <div class="fixedBg noTransition" data-background="facebook">
-                <div class="container">
-                  <span>Check out</span>
-                  <br>
-                  <span>my code!</span>
-                </div>
-              </div>
+                href="https://linkedin.com/in/geordyn">
+                <i class="fa fa-linkedin-square fa-4x"></i>
+              </a>&nbsp;
 
               <a
-                href="https://facebook.com/geordyn"
-                target="_blank"
-                class="loopCol"
-                data-hover="facebook">
-                Facebook
-                <span class="coloredHover">Facebook.</span>
+                href="https://github.com/geordyn">
+                <i class="fa fa-github fa-4x"></i>
+              </a>&nbsp;
+
+              <a
+                href="https://facebook.com/geordyn">
+                <i class="fa fa-facebook-square fa-4x"></i>
+              </a>&nbsp;
+
+              <a
+                href="https://instagram.com/slicedmangos">
+                <i class="fa fa-instagram fa-4x"></i>
               </a>
-              <div class="fixedBg noTransition" data-background="facebook">
-                <div class="container">
-                  <span>Creep on</span>
-                  <br>
-                  <span>highschool</span>
-                  <br>
-                  <span>photos!</span>
-                </div>
-              </div>
-            </div>
+
           </div>
         </section>
 
         <section id="works"><br/>
-          <div class="shortColumn info">
-            <h4>Past Projects</h4>
-            <h3>I'm constantly improving my projects as my skills progress. Here are some that I'm very proud of thus far:</h3>
-          </div>
-          <div>
-            <ul class="worksList clearfix">
-              <div class="row clearfix">
-                <li>
+
+            <h1 class="sectionTitle"><span>Past Projects</span></h1>
+
+          <div class="worksContent">
+
+                <div class="worksInd">
                   <div class="workTitle"><a href="http://198.211.101.167">Divinity Salon</a></div>
                   <div class="workSubtitle">Website created for Divinity Salon - Encinitas, CA &middot; 2016</div>
-                </li>
-                <li>
+
+              </div>
+              <div class="worksInd">
+
                   <div class="workTitle">DevMountain Globe</div>
                   <div class="workSubtitle">Group Project using D3.js to display past DevMountain students' "impact on the world." &middot; 2016</div>
-                </li>
+
               </div>
-              <div class="row clearfix">
-                <li>
-                  <div class="workTitle"><a href="http://198.211.100.239">Salon Appt Scheduler</a></div>
-                  <div class="workSubtitle">App intended for team of salon employees to schedule their appointments and store past client information. Includes an employee stats page that uses D3.js to display rankings of employees based on customer reviews on website. &middot; 2016</div>
-                </li>
+
+                <div class="worksInd">
+
+                  <div class="workTitle"><a href="http://198.211.100.239">Appointment Scheduler</a></div>
+                  <div class="workSubtitle">App intended for team of salon employees to schedule their appointments and store past client information. Includes an employee stats page that uses D3.js to display rankings of employees based on customer reviews on website &middot; 2016</div>
+                </div>
                 <!-- <li>
                   <div class="workTitle">lol no jk</div>
                   <div class="workSubtitle">Just hire me. Plz. &middot; 2015</div>
                 </li> -->
-              </div>
-            </ul>
+
           </div>
         </section>
       </div>
-      <!-- <div class="hidden">
-        <a href="http://brackoverflow.com/">clickme</a>
-      </div> -->
       <div class="footer">
-        <div class="mobile">
-          <a href="http://github.com/geordyn">github</a>
-          <a href="http://facebook.com/geordynX">facebook</a>
-          <a href="http://linkedin.com/in/geordyn">linkedin</a>
+          <a href="http://github.com/geordyn"><span class="navTxt">github</span></a>
+          <a href="http://facebook.com/geordynX"><span class="navTxt">facebook</span></a>
+          <a href="http://linkedin.com/in/geordyn"><span class="navTxt">linkedin</span></a>
         </div>
-        <div class="footerInside">
-      <div class="hidden">
-        <a href="http://github.com/geordyn">github</a>
       </div>
-      <div class="hidden">
-        <a href="http://facebook.com/geordynX">facebook</a>
-      </div>
-      <div class="hidden">
-        <a href="http://linkedin.com/in/geordyn">linkedin</a>
-      </div></div></div>
+
+      <!-- end container -->
     </div>
   </main>
 </body>

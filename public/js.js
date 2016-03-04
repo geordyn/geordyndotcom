@@ -1,8 +1,8 @@
 // SENTENCES
 var sections = [
-  {	sentence : ' a MEAN Stack web developer based in the United States.' }
+  {	sentence : ' a MEAN Stack web developer from the US.' }
 , { sentence : ' "back at it again with the white vans." ' }
-, { sentence : ' constantly learning new things.' }
+, { sentence : ' always learning something new.' }
 , {	sentence : ' always going to make you laugh.' }
 , { sentence : ' eating avocados.' }
 , {	sentence : ' best friends with her cat, Baxter.' }
@@ -10,9 +10,6 @@ var sections = [
 , {	sentence : ' all in, or nothing.' }
 , {	sentence : ' currently living in Provo, UT.'  }
 , {	sentence : ' listening to Hozier on Spotify.' }
-, {	sentence : ' so in love with avocados that she has a tattoo of one.' }
-, { sentence : ' lovely.' }
-, {	sentence : ' not sure if I\'m going too far with this.' }
 , {	sentence : ' curious to know you.' }
 , { sentence : ' making things she loves.' }
 , {	sentence : ' missing San Diego, CA.' }
@@ -98,58 +95,10 @@ function writing (text) {
   }
 };
 
-// BACKGROUND LOOP
-function rand (min, max) {
-  return min + Math.random() * (max - min)
-}
-function changebackground () {
-  var body = $('body')
-  var h = rand(1, 360)
-  var s = rand(80, 90)
-  var l = rand(50, 60)
-  var h2
-  if (h < 180) {
-    h2 = h + 180
-  } else {
-    h2 = h - 180
-  }
-  body.css({ // looping background
-    'background': 'hsl(' + h + ',' + s + '%,' + l + '%)'
-  })
-  $('.fixedBg').css({ // background on hover
-    'background': 'hsl(' + h + ',' + s + '%,' + l + '%)',
-    'color': 'hsl(' + h2 + ',' + s + '%,' + l + '%)'
-  })
-  $('.coloredHover').css({ // color links on hover
-    'color': 'hsl(' + h + ',' + s + '%,' + l + '%)'
-  })
 
-}
-
-// COLORS LOOP
-function loopColors () {
-  var selector = $('.loopCol')
-  var h = rand(1, 360)
-  var s = rand(0, 100)
-  var l = rand(0, 80)
-  selector.css({
-    'color': 'hsl(' + h + ',' + s + '%,' + l + '%)'
-  })
-}
-
-// NOOB STUFF
+//ON LOAD
 $(document).ready(function () {
 
-// BACKGROUND
-  changebackground()
-  setTimeout(function () {
-    $('body').removeClass('noTransition')
-    $('fixedBg').removeClass('noTransition')
-    changebackground()
-  }, 2000)
-  setInterval(function () {
-    changebackground()
-  }, 20000)
 
 // TYPING
   var firstTimer = 1000
@@ -158,34 +107,4 @@ $(document).ready(function () {
     writing(text)
   }, firstTimer)
 
-// HOVER
-  if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-    $('body').addClass('firefoxFix')
-  }
-
-})
-
-// TWEENMAX
-$(document).ready(function ($) {
-  var bgFixed = $('.fixedBg')
-  var elements = $('.fixedBg span')
-  var triggerHover = $('.loopCol')
-  tlHoverIn  = new TimelineMax()
-  tlHoverOut = new TimelineMax()
-
-  triggerHover.hover(
-
-    function () {
-      TweenMax.to($(this).next('.fixedBg'), 0.5, {autoAlpha: 1})
-      TweenMax.staggerTo($(this).next('.fixedBg').find('span'), 0.8, { y: 0, ease: Expo.easeOut}, 0)
-    },
-
-    function () {
-      TweenMax.to($(this).next('.fixedBg'), 0.5, {autoAlpha: 0})
-      TweenMax.to($(this).next('.fixedBg').find('span').eq(0), 0.8, { y: 30, ease: Expo.easeOut})
-      TweenMax.to($(this).next('.fixedBg').find('span').eq(1), 0.8, { y: 60, ease: Expo.easeOut})
-      TweenMax.to($(this).next('.fixedBg').find('span').eq(2), 0.8, { y: 90, ease: Expo.easeOut})
-      TweenMax.to($(this).next('.fixedBg').find('span').eq(3), 0.8, { y: 120, ease: Expo.easeOut})
-    }
-  )
-})
+});
