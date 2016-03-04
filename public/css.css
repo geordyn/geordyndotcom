@@ -336,6 +336,10 @@ color: #292727;
 font-size: 14px;
 display: block;
 margin-top: 5px;
+opacity: 0.4;
+}
+.sig {
+  height: 8vh;
 }
 
  /* FOOTER */
