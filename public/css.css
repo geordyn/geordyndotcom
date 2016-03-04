@@ -539,6 +539,13 @@ opacity: 0.4;
     font-size: 1em;
     width: 100%;
   }
+  .worksContent {
+    display: inline-block;;
+  }
+
+  .worksInd {
+  }
+
   .textContainer {
     min-height: 80vh;
     max-height: 80vh;
@@ -562,6 +569,13 @@ opacity: 0.4;
   }
   blockquote {
     width: 100%;
+  }
+
+  .worksContent {
+    display: inline-block;;
+  }
+
+  .worksInd {
   }
 
   .social a {
@@ -605,12 +619,6 @@ opacity: 0.4;
     letter-spacing: -.45vw;
   }
 
-  .worksList li,
-   /*.shortColumn*/
-    {
-    width: 100%;
-  }
-
   .floatingNav {
     display: none;
   }
@@ -619,6 +627,13 @@ opacity: 0.4;
   }
   blockquote {
     width: 100%;
+  }
+
+  .worksContent {
+    display: inline-block;;
+  }
+
+  .worksInd {
   }
 
   .social a {
