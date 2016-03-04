@@ -102,21 +102,21 @@ section {
   margin-bottom: 16vh;
 }
 
-section h1 {
+section h4 {
   margin-bottom: 20px;
   letter-spacing: 1px;
-  font-weight: bolder;
+  /*font-weight: bolder;*/
 }
 
-h1.sectionTitle {
-	font-weight: 400;
+h4.sectionTitle {
+	/*font-weight: 400;*/
 	text-shadow:  5px 5px 5px #88382b;
 	transition: all 0.2s ease;
   text-transform: uppercase;
   text-align: center;
 }
 
-h1.sectionTitle:hover {
+h4.sectionTitle:hover {
 	cursor: inherit;
 }
 
@@ -225,18 +225,39 @@ h1.sectionTitle:hover {
 
 /* Contact */
 #contact {
-  text-align: center;
+  text-align: justify;
+  width: 100%;
+
 }
-#contact h3 {
-  display: inline;
+
+.contactCont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+.contactStuff {
+  float: left;
+  flex: 1;
+  text-align: center;
+  text-justify: inter-word;
 }
 .social {
   padding: 0px;
   /*margin-top: 5%;*/
+  /*display: flex;*/
+  flex: 1;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .social a {
-  margin: 2em;
+  margin: 1em;
 }
 
 
@@ -514,7 +535,7 @@ margin-top: 5px;
   }
 
   .social a {
-    margin: 0;
+    margin: 0.5em;
   }
 
   .textContainer {
