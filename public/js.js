@@ -1,12 +1,13 @@
 // SENTENCES
 var sections = [
   {	sentence : ' a MEAN Stack web developer from the US.' }
-, { sentence : ' "back at it again with the white vans." ' }
-, { sentence : ' always learning something new.' }
+, { sentence : ' currently learning ReactJS. ' }
+, { sentence : ' helping others learn code at DevMountain. ' }
 , {	sentence : ' always going to make you laugh.' }
 , { sentence : ' eating avocados.' }
 , {	sentence : ' best friends with her cat, Baxter.' }
-, {	sentence : ' super sarcastic.' }
+, {	sentence : ' scurrently learning ReactJS. ' }
+, { sentence : ' enjoying coding front to back. ' }
 , {	sentence : ' all in, or nothing.' }
 , {	sentence : ' currently living in Provo, UT.'  }
 , {	sentence : ' listening to Hozier on Spotify.' }
