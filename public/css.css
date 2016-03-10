@@ -113,7 +113,7 @@ section h4 {
 
 h4.sectionTitle {
 	/*font-weight: 400;*/
-	text-shadow:  5px 5px 5px #88382b;
+	/*text-shadow:  5px 5px 5px #88382b;*/
 	transition: all 0.2s ease;
   text-transform: uppercase;
   text-align: center;
@@ -544,6 +544,7 @@ opacity: 0.4;
   }
 
   .worksInd {
+    max-width: 200px;
   }
 
   .textContainer {
