@@ -6,7 +6,7 @@ var sections = [
 , {	sentence : ' always going to make you laugh.' }
 , { sentence : ' eating avocados.' }
 , {	sentence : ' best friends with her cat, Baxter.' }
-, {	sentence : ' scurrently learning ReactJS. ' }
+, {	sentence : ' currently learning ReactJS. ' }
 , { sentence : ' enjoying coding front to back. ' }
 , {	sentence : ' all in, or nothing.' }
 , {	sentence : ' currently living in Provo, UT.'  }
