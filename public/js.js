@@ -10,7 +10,7 @@ var sections = [
 , { sentence : ' enjoying coding front to back. ' }
 , {	sentence : ' all in, or nothing.' }
 , {	sentence : ' currently living in Provo, UT.'  }
-, {	sentence : ' listening to Hozier on Spotify.' }
+, {	sentence : ' listening to Vance Joy on Spotify.' }
 , {	sentence : ' curious to know you.' }
 , { sentence : ' making things she loves.' }
 , {	sentence : ' missing San Diego, CA.' }
