@@ -22,8 +22,15 @@ body, html {
   font-family: 'circularbook', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  background: linear-gradient(tomato, crimson);
+  width: 100%;
+}
+body {
+    background: linear-gradient(tomato, crimson);
+    min-height: 100%;
+}
 
+main {
+    min-height: 100vh;
 }
 
 a {
@@ -51,6 +58,11 @@ h4 {
   z-index: 1;
   margin: 0 auto;
   padding-bottom: 50px;
+  width: 100%;
+  /*min-height: 100vh;*/
+  background-color: transparent;
+  height: 100%;
+
 }
 
 .clearfix:after {
@@ -350,6 +362,7 @@ opacity: 0.4;
 .footer {
   text-align: center;
   width: 100%;
+  height: 100%;
   margin-bottom: .5vh;
 }
  a .navTxt {
@@ -570,6 +583,10 @@ opacity: 0.4;
   }
   blockquote {
     width: 100%;
+  }
+
+  .floatingNav {
+    display: none;
   }
 
   .worksContent {
