@@ -25,7 +25,7 @@ body, html {
   width: 100%;
 }
 body {
-    background: linear-gradient(tomato, crimson);
+    background: linear-gradient(#ED4264, #f2d37f);
     min-height: 100%;
 }
 
@@ -197,6 +197,24 @@ h4.sectionTitle:hover {
   padding-top: 0px;
   margin-top: 0px;
 }
+
+.toResume {
+    background:rgba(0,0,0,.75);
+    border-radius:5px;
+    color:#FAFAFA;
+    display:inline-block;
+    list-style:none;
+    /*margin:15px 15px;*/
+    padding:0.5em 0.75em;
+    /*padding: 0.5em;*/
+    text-align:center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+}
+
 .aboutMe {
   text-align: justify;
   text-justify: inter-word;
@@ -688,6 +706,15 @@ opacity: 0.4;
   .jstext {
     padding-right: 0px;
   }
+}
+
+
+@media all and (min-width: 800px) {
+    .textContainer {
+        min-height: 600px;
+        max-height: 600px;
+
+    }
 }
 
 /* Scrollbar Tweak */

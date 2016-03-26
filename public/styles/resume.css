@@ -2,6 +2,7 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
 
+
 html
 {
 	font-size:100%;
@@ -9,17 +10,40 @@ html
 
 body
 {
-	-webkit-font-smoothing:antialiased;
-	font-family:Lora, serif;
+    font-family:Open Sans, sans-serif;
+	-webkit-font-smoothing: antialiased;
 	font-size:18px;
 	font-weight:400;
-	line-height:1.4;
+	line-height: 1.4;
 	text-rendering:optimizeLegibility;
 }
 
+.back {
+    background:rgba(0,0,0,.75);
+    border-radius:5px;
+    color:#FAFAFA;
+    display:inline-block;
+    list-style:none;
+    margin:15px 15px;
+    padding:0.5em 0.75em;
+    /*padding: 0.5em;*/
+    text-align:justify;
+}
+
+.back {
+    cursor: pointer;
+}
+
+
+.resume {
+    height: 100%;
+    width: 100%;
+    background: #FAFAFA;
+    color: rgba(0,0,0,.75);
+}
 .skill-set li:hover
 {
-	background:#f4f5f4;
+	background:#d2d2d2;
     color:rgba(0,0,0,.75);
     cursor: default;
 }
@@ -82,14 +106,14 @@ h1
 	margin:0 auto;
 	position:relative;
 	width:150px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
 }
 
 .name-hero h1
 {
 	font-family:Open Sans, sans-serif;
-	font-size:1.5em;
+	font-size:1.9em;
 	text-align:center;
 }
 
@@ -103,7 +127,7 @@ h1
 .name-hero p
 {
 	color:rgba(0,0,0,.5);
-	font-size:.75em;
+	font-size:1em;
 	line-height:1.5;
 	margin:0 8px 0 0;
 	text-align:center;
@@ -127,6 +151,10 @@ h1
 	padding:3em;
 }
 
+.jobTitle {
+    font-size: 1.2em;
+}
+
 .inner h1
 {
 	font-size:1.75em;
@@ -134,12 +162,13 @@ h1
 
 .inner p
 {
-	color:rgba(0,0,0,.3);
+    color: rgba(0,0,0,.75);
+
 }
 
 .inner p em
 {
-	color:rgba(0,0,0,.75);
+    color:rgba(0,0,0,.3);
 	font-style:normal;
 }
 
@@ -164,10 +193,17 @@ ul
 	display:inline-block;
 	list-style:none;
 	margin:15px 15px 0 0;
-	padding:10px;
+	padding:0.5em 0.75em;
+    /*padding: 0.5em;*/
 	text-align:justify;
 }
 
+.references a {
+    color: rgba(0,0,0,.75);
+}
+.refInfo {
+    padding-left: 1em;
+}
 @media screen and (max-width: 48em) {
 	.right,.left
 	{
