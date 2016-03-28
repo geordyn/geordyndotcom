@@ -199,7 +199,7 @@ h4.sectionTitle:hover {
 }
 
 .toResume {
-    background:rgba(0,0,0,.75);
+    background:rgba(0, 0, 0, 0.47);
     border-radius:5px;
     color:#FAFAFA;
     display:inline-block;
@@ -213,6 +213,7 @@ h4.sectionTitle:hover {
     justify-content: center;
     align-items: center;
     width: 120px;
+    margin-top: 1em;
 }
 
 .aboutMe {
@@ -381,7 +382,7 @@ opacity: 0.4;
   text-align: center;
   width: 100%;
   height: 100%;
-  margin-bottom: .5vh;
+  margin-bottom: 2vh;
 }
  a .navTxt {
  	font-weight: 400;
@@ -554,6 +555,13 @@ opacity: 0.4;
 
 
 /* Media Queries */
+
+@media all and (max-width: 1900px) {
+    .textContainer {
+        min-height: 1800px;
+        max-height: 1800px;
+}
+
 @media all and (max-width: 1024px) {
 
   .info {
@@ -571,7 +579,7 @@ opacity: 0.4;
     width: 100%;
   }
   .worksContent {
-    display: inline-block;;
+    display: inline-block;
   }
 
   .worksInd {
@@ -591,7 +599,7 @@ opacity: 0.4;
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) {
   #brName {
     display: block;
   }
@@ -603,19 +611,27 @@ opacity: 0.4;
     width: 100%;
   }
 
-  .floatingNav {
-    display: none;
-  }
+
 
   .worksContent {
-    display: inline-block;;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .worksInd {
+      flex: 1;
+      max-width: 300px;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .workTitle {
+      text-align: center;
   }
 
-  .social a {
-    margin: 0.5em;
+  .social {
+    /*margin: 0.5em;*/
+    display: inline-block;
   }
   .contactStuff {
     font-size: 1em;
@@ -665,12 +681,7 @@ opacity: 0.4;
     width: 100%;
   }
 
-  .worksContent {
-    display: inline-block;;
-  }
 
-  .worksInd {
-  }
 
   .social a {
     margin: 0.5em;
@@ -709,13 +720,58 @@ opacity: 0.4;
 }
 
 
-@media all and (min-width: 800px) {
+
+@media all and (max-width: 800px) {
     .textContainer {
         min-height: 600px;
         max-height: 600px;
+    }
 
+    /*.floatingNav {
+        display: none;
+    }*/
+}
+
+@media all and (max-width: 980px) {
+    .textContainer {
+        min-height: 600px;
+        max-height: 600px;
+    }
+    .floatingNav {
+        display: none;
     }
 }
+
+@media all and (min-width: 980px) {
+    .textContainer {
+        min-height: 600px;
+        max-height: 600px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .textContainer {
+        min-height: 300px;
+        max-height: 600px;
+    }
+    .worksContent {
+      display: block;
+    }
+
+    .worksInd {
+        display: block;
+        margin: auto;
+        padding: 0px;
+        max-width: 100%;
+        margin-top: 1em;
+
+    }
+    .workTitle {
+        text-align: center;
+    }
+
+}
+
 
 /* Scrollbar Tweak */
 ::-webkit-scrollbar {

@@ -24,7 +24,7 @@ body
     color:#FAFAFA;
     display:inline-block;
     list-style:none;
-    margin:15px 15px;
+    margin:0.5em;
     padding:0.5em 0.75em;
     /*padding: 0.5em;*/
     text-align:justify;
@@ -40,6 +40,9 @@ body
     width: 100%;
     background: #FAFAFA;
     color: rgba(0,0,0,.75);
+}
+.toResume:hover {
+    cursor: pointer;
 }
 .skill-set li:hover
 {
@@ -136,7 +139,11 @@ h1
 .name-hero .name-text
 {
 	margin:0 auto;
-	width:85%;
+	width:100%;
+}
+
+.name-text p {
+    margin: 0;
 }
 
 .name-text a {
@@ -185,6 +192,7 @@ ul
 	padding:0;
 }
 
+
 .skill-set li
 {
 	background:rgba(0,0,0,.75);
@@ -208,26 +216,42 @@ ul
 	.right,.left
 	{
 		float:none;
-    position:relative !important;
+    position:relative;
 		width:100%;
     min-height:500px;
 	}
   .handmade {
-  text-align:center !important;
-  margin-top:0px !important;
-}
+  text-align:center;
+  margin-top:0px;
+    }
 
+    .inner h1 {
+        text-align: center;
+    }
+
+    .back {
+        margin: 0.5em;
+    }
+    .skill-set {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 75em) {
-    body
-{ font-size:16px;}
+    body {
+        font-size:16px;
+    }
 }
 
 @media screen and (max-width: 60em) {
-    body
-{ font-size:14px;}
+    body {
+        font-size:14px;
+    }
 }
+
 .clearfix:after {
-   content: " "; /* Older browser do not support empty content */
+   content: " "; /* Older browsers do not support empty content */
    visibility: hidden;
    display: block;
    height: 0;
