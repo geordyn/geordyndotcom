@@ -749,10 +749,11 @@ opacity: 0.4;
     }
 }
 
-@media all and (max-width: 360px) {
+/*iphones*/
+@media all and (max-width: 415px) {
     .textContainer {
         min-height: 300px;
-        max-height: 600px;
+        max-height: 350px;
     }
     .worksContent {
       display: block;
