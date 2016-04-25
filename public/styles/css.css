@@ -25,7 +25,7 @@ body, html {
   width: 100%;
 }
 body {
-    background: linear-gradient(#ED4264, #f2d37f);
+    background: linear-gradient(#A8CABA, #5D4157);
     min-height: 100%;
 }
 
@@ -386,13 +386,13 @@ opacity: 0.4;
 }
  a .navTxt {
  	font-weight: 400;
- 	text-shadow:  5px 5px 5px #88382b;
+ 	/*text-shadow:  5px 5px 5px #88382b;*/
  	transition: all 0.2s ease;
    text-transform: uppercase;
  }
 
  a .navTxt:hover {
- 	text-shadow: 0 0 0 #88382b;
+ 	text-shadow: 0 0 0 #A8CABA;
  }
 
 
