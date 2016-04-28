@@ -1,9 +1,13 @@
 @import 'http://fonts.googleapis.com/css?family=Montserrat:700';
 .blog {
-  min-height: 100vh;
-  height: 100%;
-  margin: auto;
-  background: PowderBlue;
+    /*width: 100%;*/
+  /*min-height: 100vh;*/
+  /*height: 100%;*/
+  /*overflow-x: hidden;*/
+  overflow-y: auto;
+  margin-right: -50px;
+  /*margin: 0 auto;*/
+  background-color: PowderBlue;
   font-family: 'Montserrat';
   color: #393939;
   text-rendering: optimizeLegibility;
@@ -28,13 +32,13 @@
   margin: auto;
   min-height: 450px;
   max-height: 500px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   padding: 35px;
 }
 .blogDescription {
   margin: auto;
-  min-height: 300px;
-  max-height: 350px;
+  /*min-height: 300px;*/
+  /*max-height: 350px;*/
   overflow: auto;
   line-height: 25px;
   font-size: 16px;
