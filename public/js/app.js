@@ -10,6 +10,11 @@ angular.module("app", ['ui.router'])
       templateUrl: './../views/homeTmpl.html',
       controller: 'homeCtrl'
     })
+    .state('blog', {
+      url: '/blog',
+      templateUrl: './../views/blogTmpl.html',
+      controller: 'blogCtrl'
+    })
     .state('resume', {
       url: '/resume',
       templateUrl: './../views/resumeTmpl.html'
