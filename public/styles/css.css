@@ -23,6 +23,8 @@ body, html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 body {
     background: linear-gradient(#A8CABA, #5D4157);
