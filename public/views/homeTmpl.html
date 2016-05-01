@@ -17,6 +17,7 @@
 
       <section id="about"><br/>
           <div class="toResume" ui-sref="resume">View Resume</div>
+          <h6 class="bouncy">Scroll Down, HoneyBun</h6>
         <div class="quoteContainer"><blockquote>
           I promise to never use the cliché phrase, "I make stuff." I'll never leave out a semicolon. My internal links will never open a new window. Most importantly, I've made it my mission to switch all IE users to Google Chrome&hellip; one grandma at a time.
           <cite><img class="sig" src="./styles/photos/sig.png"></cite>
@@ -25,10 +26,9 @@
           <h4 class="sectionTitle"><span>about me</span></h4>
           <div class="aboutMe">
 
-            I have a love for three things in life: web development, traveling, and writing. I'm origininally from Chicago, but I have lived in San Diego and Phoenix as well. As of now, I live in Provo, Utah. I enjoy coding front to back, using the MEAN Stack. Learning new things is something I enjoy; I am always eager to continue developing my skills. Recently I've been diving into ReactJS. During my coding breaks, I enjoy writing and cross-stitching.
-            I love coding, but I also love to teach others how it all works! I am currently a teacher's assistant at
-            <a><span class="coloredHover">DevMountain</span></a>,
-            but I am willing to make myself available for small projects.
+            Truthfully, I don't want to bore you with a long paragraph about myself, so I'll stick to the basics. I'm originally from Chicago, Illinois but have lived in many different places such as San Diego, Phoenix, and Provo. Currently I live in Dallas, Texas USA. Web development is my one true love and nothing will keep me from her. I started as a student at <a href="https://devmounta.in/">DevMountain's</a> Provo, Utah campus and now I work for them in Dallas, Texas! Since I love teaching others to code, I accepted the position as a Mentor at <a><span class="coloredHover">DevMountain</span></a> for the summer and I am unavailble for full time work until this Fall. In the meantime, I am available for smaller projects. For any inquiries feel free to email, call, or text me.
+            <h4><a ui-sref="blog">Read My Latest Blog Post</a></h4>
+
 
 
           </div>
@@ -47,6 +47,8 @@
                 class="email">
                 <h3>geordyn.ader@gmail.com</h3>
               </a>
+              <h4><a ui-sref="blog">Read My Latest Blog Post</a></h4>
+
             </div>
           <div class="social">
 
@@ -74,15 +76,26 @@
       </section>
 
       <section id="works"><br/>
+
           <h4 class="sectionTitle"><span>Featured</span></h4>
             <div class="worksContent">
                 <div class="worksInd">
 
-                    <div class="workTitle"><a href="https://devmounta.in/blog/from-student-to-mentor-interview-with-geordyn-ader">From Student to Mentor: Interview with Geordyn</div>
-                    <div class="workSubtitle">A quick glimpse into my journey from being a student to landing a Mentor position at <a href="https://www.devmounta.in">DevMountain</a>.</div>
+                    <div class="workTitle"><a href="https://devmounta.in/blog/from-student-to-mentor-interview-with-geordyn-ader">From Student to Mentor: Interview with Geordyn Ader</div>
+                    <div class="workSubtitle">The <a href="https://www.devmounta.in">DevMountain</a> Team took the time to sit down with Geordyn Ader to get the scoop of how she went from a DevMountain student in Provo, Utah to a Mentor in Dallas, Texas.</div>
 
                 </div>
             </div>
+
+            <!-- <div class="worksContent inlineWork">
+                <div class="worksInd">
+                    <h4 class="sectionTitle"><span>Latest Blog Post</span></h4>
+
+                    <div class="workTitle"><a href="https://devmounta.in/blog/from-student-to-mentor-interview-with-geordyn-ader">DevMountain Life</div>
+                    <div class="workSubtitle">This is a more detailed explanation of my time as a student at <a href="https://www.devmounta.in">DevMountain</a>. I wanted to write this for others looking at DevMountain as a potential school. When I applied, nothing like this was written, which made my choice to attend a little bit intimidating - I didn't know what to expect.</div>
+
+                </div>
+            </div> -->
 
 
           <h4 class="sectionTitle"><span>Projects</span></h4>
@@ -101,11 +114,18 @@
 
             </div>
 
+            <div class="worksInd">
+
+              <div class="workTitle"><a href="http://salon.geordyn.com/">Divinity Salon</a></div>
+              <div class="workSubtitle">A static website created and customized for Divinity Salon located in Encinitas, California. This clean, simplistic website perfectly showcases Divinity Salon's minimalistic style and class. This design was created to be mobile and desktop friendly. </div>
+            </div>
+
               <div class="worksInd">
 
                 <div class="workTitle"><a>Appointment Scheduler</a></div>
                 <div class="workSubtitle">A Personal Project using the MEAN Stack, JavaScript FullCalendar, and D3.js intended for a salon with a team of stylists to schedule their appointments and store past client information. Includes a "timecard" feature for employees' hours and an employee stats page that uses D3.js to display rankings of employees based on customer reviews.</div>
               </div>
+
 
 
         </div>
@@ -120,5 +140,7 @@
     <a href="http://github.com/geordyn"><span class="navTxt">github</span></a>
     <a href="http://facebook.com/geordynX"><span class="navTxt">facebook</span></a>
     <a href="http://linkedin.com/in/geordyn"><span class="navTxt">linkedin</span></a>
+    <a ui-sref="blog"><span class="navTxt">blog</span></a>
+
 </footer>
 </div>
