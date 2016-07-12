@@ -1,0 +1,67 @@
+@import 'http://fonts.googleapis.com/css?family=Montserrat:700';
+.blog {
+    /*width: 100%;*/
+  /*min-height: 100vh;*/
+  /*min-width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;*/
+  /*height: 100%;*/
+  /*overflow-x: hidden;*/
+  overflow-y: auto;
+  margin-right: -10px;
+  /*margin: 0 auto;*/
+  background-color: PowderBlue;
+  font-family: 'Montserrat';
+  color: #393939;
+  text-rendering: optimizeLegibility;
+}
+.blogTitle {
+  text-align: center;
+  color: Pink;
+  display: block;
+  font-size: 140px;
+  font-weight: 200;
+  margin: 0 auto;
+  text-shadow: 9px 7px 0 MistyRose;
+  -webkit-text-stroke: 3px DeepPink;
+  max-width: 100%;
+}
+.postTitle {
+  text-align: left;
+  margin: 0 auto;
+  padding: 0px;
+}
+.blogContent {
+  margin: auto;
+  min-height: 450px;
+  max-height: 500px;
+  /*overflow: hidden;*/
+  padding: 35px;
+}
+.blogDescription {
+  margin: auto;
+  /*min-height: 300px;*/
+  /*max-height: 350px;*/
+  overflow: auto;
+  line-height: 25px;
+  font-size: 16px;
+  /*border-bottom: 0.5px dotted MistyRose;*/
+}
+.postSection {
+  font-size: 22px;
+  text-shadow: 5px 3px 0 MistyRose;
+  /*font-style: italic;*/
+}
+
+.back {
+    text-align: center;
+}
+
+
+@media screen and (min-device-width: 800px) {
+    .blog {
+        padding: 100px;
+        padding-top: 10px;
+    }
+
+}

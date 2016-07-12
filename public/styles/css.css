@@ -23,6 +23,8 @@ body, html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 body {
     background: linear-gradient(#A8CABA, #5D4157);
@@ -80,14 +82,15 @@ h4 {
   color: #f4f5f4;
   letter-spacing: -0.38vw;
   line-height: 0.98;
-  min-height: 70vh;
+  min-height: 30vh;
   max-height: 70vh;
 }
 
 .jstext {
   width: 100%;
-  padding-top: 12vh;
-  padding-right: 50px;
+  text-align: center;
+  padding-top: 80px;
+  padding: 30px;
 }
 
 .jstext:after {
@@ -114,7 +117,7 @@ h4 {
 
 /*SECTION HEADERS*/
 section {
-  margin-bottom: 16vh;
+  margin-bottom: 5vh;
 }
 
 section h4 {
@@ -129,6 +132,7 @@ h4.sectionTitle {
 	transition: all 0.2s ease;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 40px;
 }
 
 h4.sectionTitle:hover {
@@ -181,6 +185,7 @@ h4.sectionTitle:hover {
 /* Floating Nav Top */
 
 .floatingNav {
+    display: none;
   z-index: 1000;
   padding: 5px;
   width: 6em;
@@ -273,7 +278,7 @@ h4.sectionTitle:hover {
 
 }
 .contactStuff {
-  float: left;
+  /*float: left;*/
   flex: 1;
   text-align: center;
   text-justify: inter-word;
@@ -305,6 +310,7 @@ h4.sectionTitle:hover {
   font-family: 'circularbold', sans-serif;
   font-size: 20px;
   letter-spacing: .75px;
+  text-align: center;
 }
 
 .workSubtitle {
@@ -317,18 +323,19 @@ h4.sectionTitle:hover {
 
 .worksContent {
   width: 100%;
-  display: flex;
+  /*display: flex;*/
   flex-wrap: wrap;
   justify-content: center;
   margin-right: 0;
 }
+
 
 .worksInd {
 text-align: justify;
 text-justify: inter-word;
 flex: 1;
 margin: 10px;
-padding-right: 50px;
+/*padding-right: 50px;*/
 }
 
 
@@ -347,8 +354,8 @@ margin:  0 auto;
 font-family: Georgia, serif;
 font-size: 18px;
 font-style: italic;
-width: 50%;
-padding: 0.35em 40px;
+/*width: 50%;*/
+/*padding: 0.35em 40px;*/
 line-height: 1.45;
 position: relative;
 color: #f4f5f4;
@@ -548,232 +555,6 @@ opacity: 0.4;
 }
 
 
-
-
-
-
-
-
-/* Media Queries */
-
-@media all and (max-width: 1900px) {
-    .textContainer {
-        min-height: 1800px;
-        max-height: 1800px;
-}
-
-@media all and (max-width: 1024px) {
-
-  .info {
-    font-size: 2vw;
-  }
-  blockquote {
-    width: 100%;
-  }
-
-  .social a {
-    margin: 0.5em;
-  }
-  .contactStuff {
-    font-size: 1em;
-    width: 100%;
-  }
-  .worksContent {
-    display: inline-block;
-  }
-
-  .worksInd {
-    max-width: 200px;
-  }
-
-  .textContainer {
-    min-height: 80vh;
-    max-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;;
-  }
-
-  h3 {
-    letter-spacing: -.15vmax;
-  }
-}
-
-@media all and (min-width: 768px) {
-  #brName {
-    display: block;
-  }
-
-  #contact {
-    display: block;
-  }
-  blockquote {
-    width: 100%;
-  }
-
-
-
-  .worksContent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .worksInd {
-      flex: 1;
-      max-width: 300px;
-      flex-direction: row;
-      flex-wrap: wrap;
-  }
-  .workTitle {
-      text-align: center;
-  }
-
-  .social {
-    /*margin: 0.5em;*/
-    display: inline-block;
-  }
-  .contactStuff {
-    font-size: 1em;
-    margin: auto;
-    display: block;
-    width: 100%;
-  }
-  .contactCont {
-    display: block;
-  }
-
-  .textContainer {
-    min-height: 60vh;
-    max-height: 60vh;
-    font-size: 11.2vw;
-    letter-spacing: -.45vw;
-  }
-
-  .info {
-    font-size: 2.5vw;
-  }
-
-  h3 {
-    font-size: 5vw;
-  }
-
-  .jstext {
-    padding-right: 0px;
-  }
-}
-
-@media all and (max-width: 468px) {
-  .textContainer {
-    min-height: 60vh;
-    max-height: 60vh;
-    font-size: 11.4vw;
-    letter-spacing: -.45vw;
-  }
-
-  .floatingNav {
-    display: none;
-  }
-  .social {
-    display: inline;
-  }
-  blockquote {
-    width: 100%;
-  }
-
-
-
-  .social a {
-    margin: 0.5em;
-  }
-  .contactStuff {
-    font-size: 1em;
-    margin: auto;
-    width: 100%;
-  }
-  .contactCont {
-    display: block;
-    text-align: center;
-  }
-  #contact {
-    display: block;
-  }
-
-
-
-  section h4:after {
-    width: 140px;
-    overflow: hidden;
-  }
-
-  .info {
-    font-size: 16px;
-  }
-
-  h3 {
-    font-size: 7.5vw;
-  }
-
-  .jstext {
-    padding-right: 0px;
-  }
-}
-
-
-
-@media all and (max-width: 800px) {
-    .textContainer {
-        min-height: 600px;
-        max-height: 600px;
-    }
-
-    /*.floatingNav {
-        display: none;
-    }*/
-}
-
-@media all and (max-width: 980px) {
-    .textContainer {
-        min-height: 600px;
-        max-height: 600px;
-    }
-    .floatingNav {
-        display: none;
-    }
-}
-
-@media all and (min-width: 980px) {
-    .textContainer {
-        min-height: 600px;
-        max-height: 600px;
-    }
-}
-
-/*iphones*/
-@media all and (max-width: 415px) {
-    .textContainer {
-        min-height: 300px;
-        max-height: 350px;
-    }
-    .worksContent {
-      display: block;
-    }
-
-    .worksInd {
-        display: block;
-        margin: auto;
-        padding: 0px;
-        max-width: 100%;
-        margin-top: 1em;
-
-    }
-    .workTitle {
-        text-align: center;
-    }
-
-}
-
-
 /* Scrollbar Tweak */
 ::-webkit-scrollbar {
   width: 7px;
@@ -807,4 +588,65 @@ opacity: 0.4;
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+
+
+.bouncy {
+  cursor: default;
+  margin: auto;
+  display: block;
+
+  -webkit-animation: bounce 450ms ease infinite alternate;
+
+  /*font-family: 'Titan One', cursive;*/
+  font-size: 14px;
+  color: #FFF;
+  text-align: center;
+  line-height: 20px;
+  text-shadow:
+
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               0 2px 2px rgba(0, 0, 0, .6);
+}
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -30px;
+
+    text-shadow:
+                 0 2px 2px rgba(0, 0, 0, .3);
+  }
+}
+
+
+
+
+
+@media screen and (min-device-width: 800px)
+{
+    .textContainer {
+        min-height: 70vh;
+        max-height: 70vh;
+        padding-top: 50px;
+    }
+    .toResume {
+        width: 140px;
+    }
+    blockquote {
+        max-width: 40%;
+    }
+    .worksContent {
+        display: flex;
+    }
+    .worksInd {
+        flex: 1;
+        max-width: 30%;
+    }
+    .floatingNav {
+        display: block;
+    }
 }
