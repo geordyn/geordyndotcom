@@ -591,7 +591,9 @@ opacity: 0.4;
 }
 
 
-
+.topQuote {
+    padding: 0.5em;
+}
 
 
 @media screen and (min-device-width: 800px)
