@@ -2,16 +2,16 @@ angular.module("app").controller("homeCtrl", function($scope) {
 
   // SENTENCES
   var sections = [
-    {	sentence : ' a MEAN Stack web developer from the US.' }
+    {	sentence : ' a Full-Stack Web Developer from the US.' }
   , { sentence : ' currently learning ReactJS. ' }
+  , {	sentence : ' is playing PokemonGo.' }
   , { sentence : ' helping others learn code at DevMountain. ' }
   , {	sentence : ' always going to make you laugh.' }
   , { sentence : ' eating avocados.' }
-  , {	sentence : ' best friends with her cat, Baxter.' }
   , {	sentence : ' currently learning ReactJS. ' }
   , { sentence : ' enjoying coding front to back. ' }
   , {	sentence : ' all in, or nothing.' }
-  , {	sentence : ' currently living in Provo, UT.'  }
+  , {	sentence : ' currently living in Dallas, Texas.'  }
   , {	sentence : ' listening to Vance Joy on Spotify.' }
   , {	sentence : ' curious to know you.' }
   , { sentence : ' making things she loves.' }

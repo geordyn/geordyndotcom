@@ -592,38 +592,6 @@ opacity: 0.4;
 
 
 
-.bouncy {
-  cursor: default;
-  margin: auto;
-  display: block;
-
-  -webkit-animation: bounce 450ms ease infinite alternate;
-
-  /*font-family: 'Titan One', cursive;*/
-  font-size: 14px;
-  color: #FFF;
-  text-align: center;
-  line-height: 20px;
-  text-shadow:
-
-               0 6px 0 transparent,
-               0 7px 0 transparent,
-               0 8px 0 transparent,
-               0 9px 0 transparent,
-               0 2px 2px rgba(0, 0, 0, .6);
-}
-/* ANIMATION */
-@-webkit-keyframes bounce {
-  100% {
-    top: -30px;
-
-    text-shadow:
-                 0 2px 2px rgba(0, 0, 0, .3);
-  }
-}
-
-
-
 
 
 @media screen and (min-device-width: 800px)
