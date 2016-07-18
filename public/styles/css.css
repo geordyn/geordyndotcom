@@ -114,6 +114,11 @@ h4 {
   display: none;
 }
 
+.livesite {
+    margin-left: 5%;
+    cursor: pointer;
+    /*display: inline-block;*/
+}
 
 /*SECTION HEADERS*/
 section {
