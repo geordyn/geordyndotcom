@@ -2,23 +2,23 @@ angular.module("app").controller("homeCtrl", function($scope) {
 
   // SENTENCES
   var sections = [
-    {	sentence : ' a Full-Stack Web Developer from the US.' }
-  , { sentence : ' currently learning ReactJS. ' }
-  , {	sentence : ' is playing PokemonGo.' }
+    {	sentence : ' a full stack web developer from the US. ' }
+  , { sentence : ' learning ReactJS. ' }
+  , {	sentence : ' playing PokemonGo. ' }
   , { sentence : ' helping others learn code at DevMountain. ' }
-  , {	sentence : ' always going to make you laugh.' }
+  , {	sentence : ' always going to make you laugh. ' }
   , { sentence : ' eating avocados.' }
   , {	sentence : ' currently learning ReactJS. ' }
   , { sentence : ' enjoying coding front to back. ' }
   , {	sentence : ' all in, or nothing.' }
-  , {	sentence : ' currently living in Dallas, Texas.'  }
-  , {	sentence : ' listening to Vance Joy on Spotify.' }
-  , {	sentence : ' curious to know you.' }
-  , { sentence : ' making things she loves.' }
-  , {	sentence : ' missing San Diego, CA.' }
-  , { sentence : ' educating people.' }
-  , { sentence : ' educating herself.' }
-  , { sentence : ' a great friend.' }
+  , {	sentence : ' living in Dallas, Texas. '  }
+  , {	sentence : ' listening to Vance Joy on Spotify. ' }
+  , {	sentence : ' curious to know you. ' }
+  , { sentence : ' making things she loves. ' }
+  , {	sentence : ' missing San Diego, CA. ' }
+  , { sentence : ' educating people. ' }
+  , { sentence : ' educating herself. ' }
+  , { sentence : ' a great friend. ' }
   ];
 
   var i = 0;
@@ -40,7 +40,7 @@ angular.module("app").controller("homeCtrl", function($scope) {
       setTimeout(function () {
         if (k < beginning.length) {
           if (beginning[k] === '<') {
-            currentPart += ' <br id="brName">'
+            currentPart += ' <br id="brName">' // breaks after name
             k = k + 4
           }
           currentPart += beginning[k]
