@@ -2,14 +2,11 @@ angular.module("app").controller("homeCtrl", function($scope) {
 
   // SENTENCES
   var sections = [
-    {	sentence : ' a full stack web developer from the US. ' }
-  , { sentence : ' learning ReactJS. ' }
-  , {	sentence : ' playing PokemonGo. ' }
-  , { sentence : ' helping others learn code at DevMountain. ' }
+    {	sentence : ' a full stack web developer. ' }
+  , { sentence : ' engaged to the love of her life. ' }
+  , { sentence : ' learning PHP. ' }
   , {	sentence : ' always going to make you laugh. ' }
   , { sentence : ' eating avocados.' }
-  , {	sentence : ' currently learning ReactJS. ' }
-  , { sentence : ' enjoying coding front to back. ' }
   , {	sentence : ' all in, or nothing.' }
   , {	sentence : ' living in Dallas, Texas. '  }
   , {	sentence : ' listening to Vance Joy on Spotify. ' }
