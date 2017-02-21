@@ -269,3 +269,8 @@ ul
   font-size: 1.25em;
   margin-left:5px;
 }
+
+.weblink {
+    color:rgba(0,0,0,.75);
+    text-decoration: underline;
+}
