@@ -2,18 +2,18 @@ angular.module("app").controller("homeCtrl", function($scope) {
 
   // SENTENCES
   var sections = [
-    {	sentence : ' a full stack web developer. ' }
+    {	sentence : ' a front end web developer. ' }
   , { sentence : ' engaged to the love of her life. ' }
   , { sentence : ' learning PHP. ' }
   , {	sentence : ' always going to make you laugh. ' }
-  , { sentence : ' eating avocados.' }
+  , { sentence : ' eating hummus.' }
   , {	sentence : ' all in, or nothing.' }
   , {	sentence : ' living in Dallas, Texas. '  }
-  , {	sentence : ' listening to Vance Joy on Spotify. ' }
+  , {	sentence : ' listening to Hosier on Spotify. ' }
+  , {	sentence : ' trying to update more frequently. ' }
   , {	sentence : ' curious to know you. ' }
   , { sentence : ' making things she loves. ' }
   , {	sentence : ' missing San Diego, CA. ' }
-  , { sentence : ' educating people. ' }
   , { sentence : ' educating herself. ' }
   , { sentence : ' a great friend. ' }
   ];
